@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+
+  
+  <title>Abdullah's website landing page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+ 
+  <div class="relative">
+    <header>
+      <div class="flex justify-between w-full h-7% absolute box-content mt-4 items-center">
+        <div class="text-5xl px-9 text-neutral-50 font-bold font-Fraunces italic">Abdullah's Page</div>
+        <nav>
+          <ul class="hidden md:flex mr-6 items-center">
+            <li class="p-2 font-Barlow font-medium hover:bg-slate-600 hover:rounded-md"><a href="#" style="color: white;">About</a></li>
+            <li class="p-2 font-Barlow font-medium hover:bg-slate-600 hover:rounded-md"><a href="#" style="color: white;">Services</a></li>
+            <li class="p-2 font-Barlow font-medium hover:bg-slate-600 hover:rounded-md"><a href="#" style="color: white;">Projects</a></li>
+            <li class="p-2 font-bold">
+              <button class="font-Fraunces bg-slate-50 hover:bg-violet-300 text-lg font-medium text-black box-border py-[7px] px-[15px] " style=" border-radius: 13px;">Contact</button>
+            </li>
+            
+          </ul>
+        </nav>
+        <img class="inline-block md:hidden object-cover mr-6" src="images/icon-hamburger.svg" alt="hamburger">
+      </div>
+    </header>
+    
+    <picture>
+      <source media="(min-width: 768px)" srcset="images/desktop/image-header.jpg">
+      <img class="object-cover h-[30%] md:h-[80%] w-full" src="images/mobile/image-header.jpg" alt="header-orange">
+    </picture>
+    <div class="absolute inset-x-0 bottom-[25%] md:bottom-[40%] flex flex-col items-center justify-center h-[30%]">
+      <p class="text-white font-Fraunces  text-responsive-lg font-bold mb-6 md:mb-10">We are creatives</p>
+      <img class="object-cover h-[50%]" src="images/icon-arrow-down.svg" alt="icon down">
+    </div>
+  </div>
+
+
+  <div class="h-[50%] w-full">
+    <div class="h-[50%] w-full flex flex-col md:flex-row">
+      <div class="flex flex-col justify-center items-center md:items-start w-full md:w-[50%] p-10">
+          <h1 class="font-Fraunces font-black text-responsive-md mb-4">Transform your brand</h1>
+          <p class="font-Barlow text-responsive-sm text-gray-400 text-center md:text-start font-bold mb-4">We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#" class="font-Fraunces font-bold border-b-2 border-Softred inline-block">LEARN MORE</a>
+      </div>
+      <img class="w-full md:w-[50%]" src="images/desktop/image-transform.jpg" alt="">
+    </div>
+    <div class="h-[50%] w-full flex flex-col md:flex-row">
+      <img class=" w-full md:w-[50%]" src="images/desktop/image-stand-out.jpg" alt="">
+      <div class="flex flex-col justify-center items-center md:items-start w-full md:w-[50%] p-10">
+        <h1 class="font-Fraunces font-black text-responsive-md mb-4 md:mb-2 text-center md:text-start">Stand out to the right audience</h1>
+        <p class="font-Barlow text-responsive-sm text-gray-400 font-bold mb-4 md:mb-2 text-center md:text-start">  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+        <a href="#" class="font-Fraunces font-bold border-b-2 border-Yellow">LEARN MORE</a>
+    </div>
+    </div>
+  </div>
+  
+  <div class="w-full h-[50%] flex flex-col md:flex-row text-Darkmoderatecyan">
+    <div class="w-full md:w-[50%] h-full relative">
+      <img class="w-[100%] h-full object-cover" src="images/desktop/image-graphic-design.jpg" alt="">
+      <div class="absolute w-full h-1/2 bottom-0 flex justify-center items-center flex-col ">
+        <h1 class="font-Fraunces font-black text-responsive-md mb-2 text-Darkdesaturatedcyan ">Graphic Design</h1>
+        <p class="font-Barlow text-center text-responsive-sm font-bold mb-2">Great design makes you memorable. We deliver <br> artwork that underscores your brand message <br> and captures potential clients’ attention.</p>
+      </div>
+    </div>
+    <div class="w-full md:w-[50%] h-full relative">
+        <img class="w-[100%] h-full object-cover" src="images/desktop/image-photography.jpg" alt="">
+        <div class="absolute w-full h-1/2 bottom-0 flex justify-center items-center flex-col ">
+          <h1 class="font-Fraunces font-black text-responsive-md mb-2 text-Darkblue ">Photography</h1>
+          <p class="font-Barlow text-Darkblue text-center text-responsive-sm font-bold mb-2">Increase your credibility by getting the most <br> stunning, high-quality photos that improve your <br> business image.</p>        
+      </div>
+    </div>
+  </div>
+
+  <div class="h-[60%] w-full flex flex-col items-center justify-center mt-10 mb-10">
+    <h1 class="font-Fraunces text-xl font-bold text-gray-400 mt-2 tracking-wide mb-10 md:mb-20">CLIENT TESTIMONIALS</h1>
+    <div class="flex flex-col  md:flex-row h-full w-full">
+      <div class="w-full md:w-[33%] h-full flex flex-col items-center justify-center ">
+        
+        <img class="size-12 rounded-full mb-10" src="images/image-emily.jpg" alt="">
+        
+        <p class="font-Barlow text-responsive-xsm text-center text-gray-400 font-bold  mb-10">We put our trust in Sunnyside and they <br > delivered, making sure our needs were met <br > and deadlines were always hit.</p>
+        <p class="font-Fraunces text-responsive-sm mb-2 font-bold">Emily R.</p>
+        <p class="font-Barlow text-xs mb-8 md:mb-2 font-bold text-gray-400">Marketing Director</p>
+      </div>
+      <div class="w-full md:w-[33%] h-full flex flex-col items-center justify-center">
+        
+        <img class="size-12 rounded-full mb-10" src="images/image-thomas.jpg" alt="">
+        
+        <p class="font-Barlow text-responsive-xsm text-center text-gray-400 font-bold  mb-10">Sunnyside’s enthusiasm coupled with their <br> keen interest in our brand’s success made <br> it a satisfying and enjoyable experience.</p>
+        <p class="font-Fraunces text-responsive-sm mb-2 font-bold">Thomas S.</p>
+        <p class="font-Barlow text-xs mb-8 md:mb-2 font-bold text-gray-400">Chief Operating Officer</p>
+      
+      
+    </div>
+    <div class="w-full md:w-[33%] h-full flex flex-col items-center justify-center">
+      
+        <img class="size-12 rounded-full mb-10" src="images/image-jennie.jpg" alt="">
+      
+      <p class="font-Barlow text-responsive-xsm text-center text-gray-400 font-bold  mb-10">Incredible end result! Our sales increased <br> over 400% when we worked with Sunnyside. <br> Highly recommended!</p>
+      <p class="font-Fraunces text-responsive-sm mb-2 font-bold">Jennie F.</p>
+      <p class="font-Barlow text-xs mb-8 md:mb-2 font-bold text-gray-400">Business Owner</p>
+  </div>
+  </div>
+  </div>
+  <div class="h-[50%] w-full flex flex-col md:flex-row mt-10">
+    <div class="w-full md:w-[50%] h-full flex">
+      <img class="w-[50%] object-cover" src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+      <img class="w-[50%] object-cover" src="images/desktop/image-gallery-orange.jpg" alt="">
+    </div>
+    <div class="w-full md:w-[50%] h-full flex">
+      <img class="w-[50%] object-cover" src="images/desktop/image-gallery-cone.jpg" alt="">
+      <img class="w-[50%] object-cover" src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="w-full h-[30vh] bg-LightModeratecyan flex flex-col items-center">
+    <h1 class="text-Darkdesaturatedcyan font-bold font-Fraunces text-responsive-md mt-4">Abdullah's Website</h1>
+    <div class="flex justify-center mt-6 font-Barlow text-Darkmoderatecyan font-medium">
+      <a class="mr-10" href="#">
+        About
+      </a>
+      <a class="mr-10" href="#">
+        Service
+      </a>
+      <a class="" href="#">
+        Projects
+      </a>
+    </div>
+    <div class="flex mt-16 justify-center">
+      <img class="mr-8" src="images/icon-facebook.svg" alt="">
+      <img class="mr-8" src="images/icon-instagram.svg" alt="">
+      <img class="mr-8" src="images/icon-pinterest.svg" alt="">
+      <img class="" src="images/icon-twitter.svg" alt="">
+    </div>
+  </div>
+
+</body>
+</html>
